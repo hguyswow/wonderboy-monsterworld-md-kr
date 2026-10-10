@@ -32,13 +32,14 @@
 
 2. [Lunar IPS](https://www.romhacking.net/utilities/240/) 같은 IPS 패치 도구로
    `wonderboy-monsterworld-md-kr.ips` 를 원본 ROM에 적용합니다.
-3. 패치된 ROM(2MB)을 에뮬레이터(Kega Fusion, Genesis Plus GX, BlastEm, MAME 등)로 실행합니다.
+3. 패치된 ROM(1MB)을 에뮬레이터(Genesis Plus GX(RetroArch), BlastEm, MAME 등)로 실행합니다.
+   ⚠ Kega Fusion 은 현재 타이틀 화면에서 START 후 멈춥니다 (세이브 메모리 인식 문제, 해결 예정).
 
    | 패치 후 | 값 |
    |---|---|
-   | 크기 | 2,097,152 바이트 (2MB) |
-   | CRC32 | `67F886A4` |
-   | SHA1 | `AFBE845C46CFD0E43487D042C71B0437D4B7CBDC` |
+   | 크기 | 1,048,576 바이트 (1MB) |
+   | CRC32 | `DDA89E6F` |
+   | SHA1 | `5BA7958367F00FD95DF786AA399C7C4A6342493F` |
 
 ## 한글화 내용
 
@@ -50,6 +51,11 @@
 
 ## 변경 내역
 
+- **2026-10-10** 베타 2
+  - ROM 크기를 원본과 같은 1MB로 유지
+  - 뱀·상점 주인·보스 등 일부 캐릭터 그림이 깨지던 문제 수정
+  - 아이템·골드 획득 메시지 글자 깨짐 수정
+  - 오카리나 연습 장면이 끝나지 않고 반복되던 문제 수정
 - **2026-10-10** 첫 공개 (베타)
 
 ## 크레딧
