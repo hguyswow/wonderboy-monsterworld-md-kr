@@ -33,13 +33,13 @@
 2. [Lunar IPS](https://www.romhacking.net/utilities/240/) 같은 IPS 패치 도구로
    `wonderboy-monsterworld-md-kr.ips` 를 원본 ROM에 적용합니다.
 3. 패치된 ROM(1MB)을 에뮬레이터(Genesis Plus GX(RetroArch), BlastEm, MAME 등)로 실행합니다.
-   ⚠ Kega Fusion 은 현재 타이틀 화면에서 START 후 멈춥니다 (세이브 메모리 인식 문제, 해결 예정).
+   Kega Fusion 도 동작합니다 (패치 후 CRC32 를 원본과 같게 맞춰 두었습니다. Fusion 이 CRC32 로 세이브 방식을 식별하기 때문입니다).
 
    | 패치 후 | 값 |
    |---|---|
    | 크기 | 1,048,576 바이트 (1MB) |
-   | CRC32 | `59336D49` |
-   | SHA1 | `111BFAC8A444815D6802BF69579678AB0E71EA0C` |
+   | CRC32 | `0D901482` (원본과 동일하게 보정) |
+   | SHA1 | `A4FD6679AF4D293F54703CC2283A242C054978E2` |
 
 ## 한글화 내용
 
@@ -51,6 +51,9 @@
 
 ## 변경 내역
 
+- **2026-10-15** 베타 4
+  - Kega Fusion에서 타이틀 화면 START 후 멈추던 문제 수정 (패치 후 ROM의 CRC32를 원본과 같게 보정)
+  - 패치 적용 후 CRC32가 원본과 같으므로, 파일 확인은 SHA1로 하세요
 - **2026-10-10** 베타 3
   - 버섯 숲(Area 2) 등 필드에서 대화창이 닫힌 후 배경 덩굴/나무 타일이 깨지던 문제 수정
   - 특정 필드 및 상점 화면에서 대화창 타일과 배경 타일 간의 VRAM 충돌 방지
